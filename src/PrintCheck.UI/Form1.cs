@@ -37,9 +37,9 @@ namespace PrintCheck.UI
             this.Text = "PrintCheck v2.0 - Discovery Edition";
             this.Size = new Size(550, 650);
             this.StartPosition = FormStartPosition.CenterScreen;
-            this.BackColor = Color.FromArgb(236, 240, 241);
+            this.BackColor = Color.FromArgb(244, 247, 246);
 
-            Panel pnlHeader = new Panel { Dock = DockStyle.Top, Height = 100, BackColor = Color.FromArgb(30, 136, 229) };
+            Panel pnlHeader = new Panel { Dock = DockStyle.Top, Height = 100, BackColor = Color.FromArgb(41, 128, 185) };
             pnlHeader.Controls.Add(new Label { Text = "PrintCheck 2.0", Font = new Font("Segoe UI", 20, FontStyle.Bold), ForeColor = Color.White, Location = new Point(25, 20), AutoSize = true });
             pnlHeader.Controls.Add(new Label { Text = "Discovery Engine Ativo", Font = new Font("Segoe UI", 9), ForeColor = Color.White, Location = new Point(27, 58), AutoSize = true });
 
@@ -55,7 +55,7 @@ namespace PrintCheck.UI
             cbEncoding.Items.AddRange(new string[] { "cp850", "cp858", "latin-1", "utf-8" });
             cbEncoding.SelectedIndex = 0;
 
-            btnPrint = new Button { Text = "IMPRIMIR TESTE COMPLETO", Location = new Point(25, 170), Size = new Size(435, 60), BackColor = Color.FromArgb(30, 136, 229), ForeColor = Color.White, FlatStyle = FlatStyle.Flat, Font = new Font("Segoe UI", 12, FontStyle.Bold) };
+            btnPrint = new Button { Text = "IMPRIMIR TESTE COMPLETO", Location = new Point(25, 170), Size = new Size(435, 60), BackColor = Color.FromArgb(41, 128, 185), ForeColor = Color.White, FlatStyle = FlatStyle.Flat, Font = new Font("Segoe UI", 12, FontStyle.Bold) };
             btnPrint.Click += BtnPrint_Click;
 
             logBox = new ListBox { Location = new Point(25, 250), Size = new Size(435, 200), Font = new Font("Consolas", 9), BackColor = Color.White };
