@@ -17,23 +17,55 @@
 - [.NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
 - Windows 10/11 (para execução da UI)
 
-### Instalação e Execução
+### 📥 Download
 
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/artur-source/printcheck-escpos.git
-   cd printcheck-escpos
-   ```
+Você pode obter o código-fonte do projeto de duas maneiras:
 
-2. Para compilar e rodar rapidamente, utilize o script fornecido:
-   ```bash
-   ./build_e_rodar.bat
-   ```
+1.  **Clonar o Repositório (Recomendado):**
+    ```bash
+    git clone https://github.com/artur-source/printcheck-escpos.git
+    cd printcheck-escpos
+    ```
 
-Ou manualmente via terminal:
-```bash
-dotnet run --project src/PrintCheck.csproj
-```
+2.  **Baixar como ZIP:**
+    Acesse a página do repositório no GitHub ([https://github.com/artur-source/printcheck-escpos](https://github.com/artur-source/printcheck-escpos)), clique no botão verde "Code" e selecione "Download ZIP". Após baixar, extraia o conteúdo para uma pasta de sua preferência.
+
+### 🛠️ Compilação e Execução
+
+Após baixar o projeto, siga um dos métodos abaixo para compilar e executar:
+
+1.  **Usando o Script `build_e_rodar.bat` (Windows):**
+    Este script automatiza a compilação e execução do projeto. Basta executá-lo na raiz do diretório do projeto:
+    ```bash
+    ./build_e_rodar.bat
+    ```
+
+2.  **Manualmente via Terminal:**
+    Abra um terminal na raiz do projeto e execute os seguintes comandos:
+    ```bash
+    dotnet build src/PrintCheck.csproj
+    dotnet run --project src/PrintCheck.csproj
+    ```
+    Isso compilará o projeto e iniciará a aplicação.
+
+### 🖥️ Tutorial de Uso da Interface
+
+Após iniciar o **PrintCheck ESC/POS**, você verá uma interface simples com as seguintes opções:
+
+1.  **Descoberta de Impressoras:**
+    *   Clique no botão "🔍" (lupa) ao lado do campo "IMPRESSORAS ENCONTRADAS:".
+    *   A aplicação iniciará o processo de descoberta, procurando impressoras via rede (TCP/IP) e no spooler do Windows.
+    *   As impressoras encontradas serão listadas no campo "IMPRESSORAS ENCONTRADAS:".
+    *   O "Log Box" na parte inferior exibirá o progresso e os resultados da descoberta.
+
+2.  **Seleção de Impressora e Encoding:**
+    *   Selecione a impressora desejada na lista suspensa "IMPRESSORAS ENCONTRADAS:".
+    *   Escolha o `ENCODING` apropriado para sua impressora (ex: `cp850` é comum no Brasil) na lista suspensa abaixo.
+
+3.  **Impressão de Teste:**
+    *   Clique no botão "IMPRIMIR TESTE COMPLETO".
+    *   A aplicação enviará um cupom de teste ESC/POS para a impressora selecionada.
+    *   O "Log Box" informará se a impressão foi bem-sucedida ou se ocorreu algum erro.
 
 ## 📂 Estrutura do Projeto
 
