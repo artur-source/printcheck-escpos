@@ -26,26 +26,40 @@ Certifique-se de ter os seguintes softwares instalados:
 
 ### 📥 Download e Execução
 
-1.  **Clone o repositório:**
+Você pode obter o projeto clonando o repositório ou baixando o arquivo ZIP.
 
+#### Opção 1: Download via ZIP (Recomendado para iniciantes)
+
+1.  Acesse a página do repositório no GitHub.
+2.  Clique no botão verde **"Code"**.
+3.  Selecione **"Download ZIP"**.
+4.  Extraia o arquivo ZIP baixado em uma pasta de sua preferência.
+5.  Abra o terminal (ou Prompt de Comando/PowerShell) e navegue até a pasta extraída:
     ```bash
-    git clone https://github.com/artur-source/printcheck-escpos.git
-    cd printcheck-escpos
+    cd caminho/para/pasta/extraida/printcheck-escpos-master/src/PrintCheck.UI
     ```
-
-2.  **Navegue até a pasta do projeto:**
-
-    ```bash
-    cd src/PrintCheck.UI
-    ```
-
-3.  **Execute a aplicação:**
-
+6.  Execute a aplicação:
     ```bash
     dotnet run
     ```
 
-    Alternativamente, você pode abrir o projeto no Visual Studio e executá-lo.
+#### Opção 2: Clone via Git
+
+1.  **Clone o repositório:**
+    ```bash
+    git clone https://github.com/artur-source/printcheck-escpos.git
+    cd printcheck-escpos
+    ```
+2.  **Navegue até a pasta do projeto:**
+    ```bash
+    cd src/PrintCheck.UI
+    ```
+3.  **Execute a aplicação:**
+    ```bash
+    dotnet run
+    ```
+
+Alternativamente, você pode abrir o projeto no Visual Studio e executá-lo.
 
 ## 📂 Estrutura do Projeto
 
