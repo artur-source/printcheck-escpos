@@ -1,0 +1,23 @@
+# .gitignore para projetos .NET (C#)
+
+[Bb]in/
+[Oo]bj/
+out/
+publish/
+
+# Visual Studio
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code
+.vscode/
+
+# Rider
+.idea/
+
+# Sistema
+Thumbs.db
+Desktop.ini
+.DS_Store
